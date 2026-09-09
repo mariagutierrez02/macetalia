@@ -59,70 +59,364 @@
 
 
 <!-- CATEGORÍAS -->
-<section id="categorias" class="max-w-7xl mx-auto px-6 py-16">
+{{-- =========================
+     CATEGORÍAS
+========================= --}}
+<section id="categorias" class="bg-[#f6f8f3] py-20">
 
-    <div class="text-center mb-10">
+    <div class="max-w-7xl mx-auto px-6">
 
-        <h2 class="text-3xl font-bold text-green-900">
-            Explora nuestras categorías
-        </h2>
+        {{-- TÍTULO --}}
+        <div class="text-center mb-12">
 
-        <p class="text-gray-500 mt-2">
-            Encuentra lo que necesitas para tus espacios.
-        </p>
+            <p class="text-green-700 font-semibold uppercase tracking-widest text-sm mb-3">
+                Descubre Macetalia
+            </p>
 
-    </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-green-900">
+                Explora nuestras categorías
+            </h2>
 
-
-    <div class="grid md:grid-cols-3 gap-6">
-
-        <div class="bg-white rounded-xl shadow-sm p-8 text-center">
-
-            <div class="text-5xl mb-4">
-                🪴
-            </div>
-
-            <h3 class="text-xl font-bold">
-                Macetas
-            </h3>
-
-            <p class="text-gray-500 mt-2">
-                Diseños para todos tus espacios.
+            <p class="text-gray-500 mt-3 max-w-2xl mx-auto">
+                Encuentra todo lo que necesitas para crear espacios
+                naturales, acogedores y llenos de vida.
             </p>
 
         </div>
 
 
-        <div class="bg-white rounded-xl shadow-sm p-8 text-center">
-
-            <div class="text-5xl mb-4">
-                🪑
-            </div>
-
-            <h3 class="text-xl font-bold">
-                Muebles
-            </h3>
-
-            <p class="text-gray-500 mt-2">
-                Complementa tu espacio.
-            </p>
-
-        </div>
+        {{-- TARJETAS --}}
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
 
 
-        <div class="bg-white rounded-xl shadow-sm p-8 text-center">
+            {{-- MACETAS --}}
+            <a href="{{ route('tienda.productos') }}"
+               class="group bg-white rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-xl transition duration-300">
 
-            <div class="text-5xl mb-4">
-                🌱
-            </div>
+                <div class="relative h-56 overflow-hidden">
 
-            <h3 class="text-xl font-bold">
-                Decoración
-            </h3>
+                    <img
+                        src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80"
+                        alt="Macetas"
+                        class="w-full h-full object-cover
+                               group-hover:scale-105 transition duration-500"
+                    >
 
-            <p class="text-gray-500 mt-2">
-                Dale personalidad a tu hogar.
-            </p>
+                    <div class="absolute inset-0 bg-black/10
+                                group-hover:bg-black/20 transition">
+                    </div>
+
+                    <div class="absolute top-4 right-4
+                                bg-white/90 w-11 h-11 rounded-full
+                                flex items-center justify-center text-xl shadow">
+                        🪴
+                    </div>
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800
+                               group-hover:text-green-700 transition">
+                        Macetas
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Diseños para todos tus espacios.
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="text-green-700 font-semibold">
+                            Ver productos
+                        </span>
+
+                        <span class="text-green-700 text-xl
+                                     group-hover:translate-x-1 transition">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            {{-- PLANTAS --}}
+            <a href="{{ route('tienda.productos') }}"
+               class="group bg-white rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-xl transition duration-300">
+
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80"
+                        alt="Plantas"
+                        class="w-full h-full object-cover
+                               group-hover:scale-105 transition duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-black/10
+                                group-hover:bg-black/20 transition">
+                    </div>
+
+                    <div class="absolute top-4 right-4
+                                bg-white/90 w-11 h-11 rounded-full
+                                flex items-center justify-center text-xl shadow">
+                        🌱
+                    </div>
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800
+                               group-hover:text-green-700 transition">
+                        Plantas
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Naturaleza para darle vida a tu hogar.
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="text-green-700 font-semibold">
+                            Ver productos
+                        </span>
+
+                        <span class="text-green-700 text-xl
+                                     group-hover:translate-x-1 transition">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            {{-- MUEBLES --}}
+            <a href="{{ route('tienda.productos') }}"
+               class="group bg-white rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-xl transition duration-300">
+
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80"
+                        alt="Muebles"
+                        class="w-full h-full object-cover
+                               group-hover:scale-105 transition duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-black/10
+                                group-hover:bg-black/20 transition">
+                    </div>
+
+                    <div class="absolute top-4 right-4
+                                bg-white/90 w-11 h-11 rounded-full
+                                flex items-center justify-center text-xl shadow">
+                        🪑
+                    </div>
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800
+                               group-hover:text-green-700 transition">
+                        Muebles
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Complementa tus espacios con estilo.
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="text-green-700 font-semibold">
+                            Ver productos
+                        </span>
+
+                        <span class="text-green-700 text-xl
+                                     group-hover:translate-x-1 transition">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            {{-- DECORACIÓN --}}
+            <a href="{{ route('tienda.productos') }}"
+               class="group bg-white rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-xl transition duration-300">
+
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=900&q=80"
+                        alt="Decoración"
+                        class="w-full h-full object-cover
+                               group-hover:scale-105 transition duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-black/10
+                                group-hover:bg-black/20 transition">
+                    </div>
+
+                    <div class="absolute top-4 right-4
+                                bg-white/90 w-11 h-11 rounded-full
+                                flex items-center justify-center text-xl shadow">
+                        🏡
+                    </div>
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800
+                               group-hover:text-green-700 transition">
+                        Decoración
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Detalles que transforman tu hogar.
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="text-green-700 font-semibold">
+                            Ver productos
+                        </span>
+
+                        <span class="text-green-700 text-xl
+                                     group-hover:translate-x-1 transition">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            {{-- JARDINERÍA --}}
+            <a href="{{ route('tienda.productos') }}"
+               class="group bg-white rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-xl transition duration-300">
+
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=80"
+                        alt="Jardinería"
+                        class="w-full h-full object-cover
+                               group-hover:scale-105 transition duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-black/10
+                                group-hover:bg-black/20 transition">
+                    </div>
+
+                    <div class="absolute top-4 right-4
+                                bg-white/90 w-11 h-11 rounded-full
+                                flex items-center justify-center text-xl shadow">
+                        🌵
+                    </div>
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800
+                               group-hover:text-green-700 transition">
+                        Jardinería
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Todo para cuidar y disfrutar tus plantas.
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="text-green-700 font-semibold">
+                            Ver productos
+                        </span>
+
+                        <span class="text-green-700 text-xl
+                                     group-hover:translate-x-1 transition">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            {{-- NOVEDADES --}}
+            <a href="{{ route('tienda.productos') }}"
+               class="group bg-white rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-xl transition duration-300">
+
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=80"
+                        alt="Novedades"
+                        class="w-full h-full object-cover
+                               group-hover:scale-105 transition duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-black/10
+                                group-hover:bg-black/20 transition">
+                    </div>
+
+                    <div class="absolute top-4 right-4
+                                bg-white/90 w-11 h-11 rounded-full
+                                flex items-center justify-center text-xl shadow">
+                        ✨
+                    </div>
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800
+                               group-hover:text-green-700 transition">
+                        Novedades
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Descubre nuestros productos más recientes.
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="text-green-700 font-semibold">
+                            Ver productos
+                        </span>
+
+                        <span class="text-green-700 text-xl
+                                     group-hover:translate-x-1 transition">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
 
         </div>
 

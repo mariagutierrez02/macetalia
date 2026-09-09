@@ -157,3 +157,11 @@ Route::get('/carrito', function () {
     return view('tienda.carrito');
 
 })->name('tienda.carrito');
+
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');

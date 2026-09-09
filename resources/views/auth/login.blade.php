@@ -76,7 +76,7 @@
 
                 <div class="mb-8">
                     <p class="text-green-600 font-semibold text-sm mb-2">
-                        PANEL ADMINISTRATIVO
+                        
                     </p>
 
                     <h2 class="text-3xl font-bold text-slate-900">
@@ -84,7 +84,7 @@
                     </h2>
 
                     <p class="text-slate-500 mt-2">
-                        Ingresa tus datos para acceder al sistema.
+                        Ingresa tus datos para acceder.
                     </p>
                 </div>
 
@@ -166,6 +166,14 @@
                             class="text-sm text-slate-600">
                             Recordarme
                         </label>
+
+                        <p class="text-center text-gray-600 mt-6">
+                         ¿No tienes una cuenta?
+                          <a href="/register"
+                            class="text-green-700 font-semibold hover:underline">
+                            Crear una cuenta
+                          </a>
+                        </p>
 
                     </div>
 
